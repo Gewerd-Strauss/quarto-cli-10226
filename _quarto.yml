@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+  render:
+  - "*.qmd"
+
+website:
+  title: "quarto-cli-10226"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: about at root
+      - href: experiments/about.qmd
+        text: about at subfolder
+        
+
+format:
+  html:
+    toc: true
+  pdf:
+    toc: true
+    

@@ -1,0 +1,10 @@
+---
+title: "About"
+---
+
+```{r}
+#| warning: false
+#| out-width: "100%"
+c <- "assets/obsidian-assets/photobox_overview_gfa_coords.jpg" # works
+knitr::include_graphics(c)
+```
