@@ -1,0 +1,18 @@
+To reproduce, perform the following steps:
+
+1. clone the repo
+2. open in bash/cmd/...
+3. execute `quarto render --to html`
+   Notice that files `index.qmd` & `about.qmd` render successfully to html. 
+   Notice that `experiments/about.qmd` technically renders to html without error*
+4. execute `quarto render --to pdf`
+   Notice that files `index.qmd` & `about.qmd` render successfully to pdf.
+   Notice that `experiments/about.qmd` errors out, producing an error while rendering to pdf.
+
+---
+
+Notes:
+
+- `quarto render` will render all files to all targets successfully, except for `experiments/about.qmd` to `experiments/about.pdf`.
+
+*not quite true. If the html-file is inspected, the image will not show up, instead creating an empty box.
