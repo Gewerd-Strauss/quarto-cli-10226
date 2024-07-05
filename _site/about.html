@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – quarto-cli-10226</title>
+<title>About at root – quarto-cli-10226</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,6 +133,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./experiments/about.html"> 
 <span class="menu-text">about at subfolder</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./experiments/nesting2/about.html"> 
+<span class="menu-text">about at subfolder/subfolder</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -152,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">About at root</h1>
 </div>
 
 
@@ -170,12 +174,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">"assets/obsidian-assets/photobox_overview_gfa_coords.jpg"</span> <span class="co"># works</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="st">"/assets/obsidian-assets/photobox_overview_gfa_coords.jpg"</span> <span class="co"># works</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(c, <span class="at">rel_path =</span> F, <span class="at">error =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="assets/obsidian-assets/photobox_overview_gfa_coords.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><img src=".\assets/obsidian-assets/photobox_overview_gfa_coords.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
