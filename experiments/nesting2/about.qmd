@@ -1,0 +1,11 @@
+---
+title: "About at nesting/nesting"
+---
+
+```{r}
+#| warning: false
+#| out-width: "100%"
+#| fig-cap: "THIS IS A CAPTION FOR A FIGURE OF AN IMAGE"
+c <- "/assets/obsidian-assets/photobox_overview_gfa_coords.jpg" # works
+knitr::include_graphics(c, rel_path = F, error = F)
+```
