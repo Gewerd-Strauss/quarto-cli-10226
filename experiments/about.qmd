@@ -1,10 +1,10 @@
 ---
-title: "About"
+title: "About at nesting"
 ---
 
 ```{r}
 #| warning: false
 #| out-width: "100%"
-c <- "assets/obsidian-assets/photobox_overview_gfa_coords.jpg" # works
-knitr::include_graphics(c)
+c <- "/assets/obsidian-assets/photobox_overview_gfa_coords.jpg" # works
+knitr::include_graphics(c, rel_path = F, error = F)
 ```
